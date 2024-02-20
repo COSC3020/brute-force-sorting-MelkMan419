@@ -14,10 +14,11 @@ sorted, i.e. do not copy the list and sort the copy.
 
 ## Runtime Analysis
 
-What is the runtime complexity of the algorithm that you implemented? What does
-a best case input for your implementation look like, what does a worst case
-input look like? How would this complexity change if you generated permutations
-randomly without memory instead of systematically trying them?
+Best Case: The best-case scenario occurs when the input array is already sorted. In this case, the algorithm would still need to check if the array is sorted after permuting it, but it would not need to perform any swaps. Thus, the best-case complexity is still O(n!), where n is the number of elements in the array.
 
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. Add your answer to this markdown file.
+Worst Case: The worst-case scenario is when the input array is in reverse sorted order. In this case, the algorithm would have to generate all possible permutations of the array and check each permutation for sorting. Generating all permutations would take O(n!) time complexity.
+
+Impact of Random Generation without Memory:
+If permutations were generated randomly without memory, the time complexity would still be O(n!) in the worst case because the algorithm would still need to consider all possible permutations.
+
+Even with random generation without memory, the worst-case time complexity remains O(n!). 
