@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/7eEMzrNd)
 # Brute-Force Sorting
 
 We talked about the complexity of the sorting problem, and used an argument over
@@ -13,10 +14,10 @@ sorted, i.e. do not copy the list and sort the copy.
 
 ## Runtime Analysis
 
-What is the runtime complexity of the algorithm that you implemented? What does
-a best case input for your implementation look like, what does a worst case
-input look like? How would this complexity change if you generated permutations
-randomly without memory instead of systematically trying them?
+Best Case:Best Case: If the input array is already sorted, the algorithm will terminate immediately after the first call to isSorted(). Hence, the best-case time complexity is O(n), where n is the number of elements in the array.
 
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. Add your answer to this markdown file.
+The worst-case scenario would be infinite time because there is no guarentee that it will be exactly right.
+
+Impact of Random Generation without Memory:
+If permutations were generated randomly without memory, the time complexity would still be infinite time in the worst case because the algorithm would still need to consider all possible permutations, and theres no guarantee it ever terminates.
+
