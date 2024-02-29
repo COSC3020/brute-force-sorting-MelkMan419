@@ -16,9 +16,8 @@ sorted, i.e. do not copy the list and sort the copy.
 
 Best Case:Best Case: If the input array is already sorted, the algorithm will terminate immediately after the first call to isSorted(). Hence, the best-case time complexity is O(n), where n is the number of elements in the array.
 
-The worst-case scenario occurs when the input array is in reverse sorted order. In this case, the algorithm will generate all permutations of the array, and it needs to check each permutation for sorting. Generating all permutations and checking each one for sorting would lead to a time complexity of O(n! (n))
+The worst-case scenario would be infinite time because there is no guarentee that it will be exactly right.
 
 Impact of Random Generation without Memory:
-If permutations were generated randomly without memory, the time complexity would still be O(n! (n)) in the worst case because the algorithm would still need to consider all possible permutations.
+If permutations were generated randomly without memory, the time complexity would still be infinite time in the worst case because the algorithm would still need to consider all possible permutations, and theres no guarantee it ever terminates.
 
-Even with random generation without memory, the worst-case time complexity remains O(n! (n)) but best case would be O(n). 
